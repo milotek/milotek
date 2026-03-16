@@ -9,5 +9,5 @@
 
 [![Contributions Graph](./profile-3d-contrib/profile-night-rainbow.svg)](https://milotekold.carrd.co/)
 
-![View Counter](https://komarev.com/ghpvc/?username=pixeljammed&style=for-the-badge&base=420&label=views)
+![View Counter](https://komarev.com/ghpvc/?username=pixeljammed&style=pixel&base=420&label=views)
 <!-- ALTERNATE: "![View Counter](https://komarev.com/ghpvc/?username=pixeljammed&style=for-the-badge&base=420&label=views)" -->
