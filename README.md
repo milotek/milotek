@@ -1,6 +1,6 @@
 > [!IMPORTANT]  
 > ## [www.milotek.dev](https://milotek.dev/)
-> > [projects](https://milotek.dev/projects/) | [work](https://linkedin.com/in/fired) | [cv](https://files.tek.rip/Documents/CV.pdf) | [games](https://milotek.dev/projects/) | [artwork](https://milotek.dev/art/)
+> > [projects](https://milotek.dev/projects/) | [work](https://linkedin.com/in/fired) | [cv](https://files.tek.rip/Documents/CV.pdf) | [games](https://milotek.dev/projects/) | [art](https://milotek.dev/art/)
 ---
 
 [![Contributions Graph](./profile-3d-contrib/profile-night-rainbow.svg)](https://milotekold.carrd.co/)
