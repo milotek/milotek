@@ -11,14 +11,29 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+
+      # Check out the action itself so we can patch it (no built-in option to cap daily counts)
+      - uses: actions/checkout@v4
+        with:
+          repository: yoshi389111/github-profile-3d-contrib
+          ref: v0.9.3
+          path: .profile-3d-action
+
+      - name: Patch action (zero out days with > MAX_DAILY_CONTRIBUTIONS)
+        run: node .github/profile-3d/patch-action.js .profile-3d-action
+
+      - uses: ./.profile-3d-action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          MAX_DAILY_CONTRIBUTIONS: 50
+          SETTING_JSON: .github/profile-3d/mocha.json
+
       - name: Commit & Push
         run: |
+          rm -rf .profile-3d-action
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          git commit -m "generated"
+          git commit -m "generated" || echo "no changes"
           git push
